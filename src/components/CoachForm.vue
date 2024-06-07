@@ -4,7 +4,7 @@
             <label for="firstname" :class="firstname.isValid ? 'text-black' : 'text-red-500'">First
                 Name</label>
             <input type="text" name="firstname" id="firstname"
-                :class="`${firstname.isValid ? 'border' : 'border border-red-700'} 'active:border-purple-500 focus:border-purple-500 outline-none rounded-lg p-2 w-full'`"
+                :class="`${firstname.isValid ? 'border' : 'border border-red-700'} 'active:border-purple-500 focus:border-purple-500  outline-none rounded-lg p-2 w-full'`"
                 v-model.trim="firstname.val" @blur="clearValidity('firstname')" />
             <p v-if="!firstname.isValid" class="text-red-500">Please enter a first name</p>
         </div>
